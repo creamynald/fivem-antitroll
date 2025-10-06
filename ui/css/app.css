@@ -22,17 +22,18 @@
     display: flex;
     align-items: center;
     gap: 14px;
-    background: rgba(6, 10, 20, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: transparent; /* 🔥 TRANSPARAN PENUH */
     border: 1px solid var(--accent);
     border-radius: 14px;
     padding: 14px 18px;
+    /* Efek glow sebagai pengganti background */
     box-shadow:
-        0 0 0 1px rgba(36, 217, 255, 0.4),
-        0 0 24px rgba(0, 200, 255, 0.3);
+        0 0 0 1px rgba(36, 217, 255, 0.3),
+        0 0 16px rgba(0, 200, 255, 0.4);
     font-family: 'Orbitron', sans-serif;
     pointer-events: auto;
+    backdrop-filter: none; /* tidak perlu blur karena transparan */
+    -webkit-backdrop-filter: none;
 }
 
 .panel-content.pulse {
