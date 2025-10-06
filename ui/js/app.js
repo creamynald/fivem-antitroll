@@ -1,7 +1,7 @@
 function main() {
     return {
         show: false,
-        minleft: 1440,
+        minleft: 60,
 
         listen() {
             window.addEventListener('message', (event) => {

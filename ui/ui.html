@@ -20,23 +20,48 @@
     </style>
 </head>
 <body x-data="main()" x-init="listen()">
-    <div class="floating-panel" x-show="show" x-transition.opacity.duration.500ms x-effect="playSoundOnShow">
+    <div class="floating-panel" x-show="show" x-transition.opacity.duration.500ms>
         <div class="panel-content" :class="{ 'pulse': show }">
+            
+            <!-- PILIH SALAH SATU IKON DI BAWAH INI -->
+            
+            <!-- 🔹 Ikon Jam (Timer) -->
+            <!-- <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="9" stroke="var(--accent)" stroke-width="1.5"/>
+                    <path d="M12 7V12L15 15" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div> -->
+
+            <!-- 🔸 Ikon Larangan Senjata (Uncomment untuk pakai) -->
+            <!--
+            <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 3L21 21" stroke="var(--danger)" stroke-width="2"/>
+                    <path d="M9 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V9" 
+                          stroke="var(--danger)" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M15 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V15" 
+                          stroke="var(--danger)" stroke-width="1.8" stroke-linecap="round"/>
+                    <circle cx="12" cy="12" r="7" stroke="var(--danger)" stroke-width="1.8"/>
+                </svg>
+            </div>
+            -->
+
+            <!-- 🔸 Ikon Perisai (Original) -->
+            <!--
             <div class="icon">
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" 
-                          stroke="var(--accent)" 
-                          stroke-width="1.5" 
-                          stroke-linejoin="round"
-                          style="filter: drop-shadow(0 0 6px var(--glow));"/>
+                          stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round"/>
                 </svg>
             </div>
+            -->
 
             <div class="text-group">
-                <h1 class="title">Warga Baru</h1>
+                <h1 class="title">Pemain Baru</h1>
                 <p class="subtitle">
-                    Bermainlah sesuai waktu yang ditentukan,
-                    anda tidak bisa memukul dan menembak sampai...
+                    Main bersama kami dulu.<br>
+                    Belum bisa menembak/serang.
                 </p>
             </div>
 
