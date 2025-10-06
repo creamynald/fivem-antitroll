@@ -1,7 +1,6 @@
 # fivem-antitroll from knxr
 
-![Image](https://i.imgur.com/pRcHb5a.png)
-
+![Image](https://i.imgur.com/KaZNw5m.png)
 ## Features
 - Admin Command to Toggle antitroll: /troll <id>
 - AntiVDM 
