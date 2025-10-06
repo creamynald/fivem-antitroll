@@ -1,22 +1,21 @@
 function main() {
     return {
         show: false,
-        minleft: 60,
-        
+        minleft: 1440,
+
         listen() {
             window.addEventListener('message', (event) => {
-                let data = event.data
+                const data = event.data;
 
-                switch(data.type) {
+                switch (data.type) {
                     case 'show':
                         this.show = data.show;
                         break;
-
                     case 'update':
                         this.minleft = data.minleft;
                         break;
                 }
-            })
+            });
         }
-    }
+    };
 }

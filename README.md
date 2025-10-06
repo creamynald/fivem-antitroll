@@ -1,6 +1,6 @@
-# knxr-antitroll
+# fivem-antitroll from knxr
 
-![Image](https://i.imgur.com/ugH2X8D.png)
+![Image](https://i.imgur.com/pRcHb5a.png)
 
 ## Features
 - Admin Command to Toggle antitroll: /troll <id>
